@@ -1,0 +1,52 @@
+================================================================================
+LOCAL SHAP EXPLANATIONS - CUSTOMER PROFILES
+================================================================================
+
+CUSTOMER PROFILE 1: EXPECTED TO CHURN
+--------------------------------------------------------------------------------
+Customer Index: 13
+Actual Churn Status: Churned
+Predicted Churn Probability: 73.50%
+Model Confidence: Medium
+
+Top Contributing Features:
+           feature      value  shap_value
+          Contract   0.000000    0.493135
+  PaymentRiskScore   4.000000    0.479295
+    OnlineSecurity   0.000000    0.290138
+      TotalCharges 906.850000    0.246792
+SpendingVolatility   9.229167   -0.195231
+
+Interpretation:
+This customer exhibits strong churn signals. The SHAP analysis reveals that specific feature combinations push the prediction toward churn. Intervention strategies should focus on the top contributing factors identified above.
+
+
+================================================================================
+
+CUSTOMER PROFILE 2: EXPECTED TO STAY
+--------------------------------------------------------------------------------
+Customer Index: 0
+Actual Churn Status: Retained
+Predicted Churn Probability: 1.41%
+Model Confidence: High
+
+Top Contributing Features:
+            feature  value  shap_value
+ContractTenureScore  144.0   -1.385644
+           Contract    2.0   -0.763794
+   PaymentRiskScore    1.0   -0.672526
+             tenure   72.0   -0.482786
+     OnlineSecurity    2.0   -0.445692
+
+Interpretation:
+This customer shows strong retention indicators. The SHAP values demonstrate that protective factors (negative SHAP values) outweigh risk factors, resulting in low churn probability. This profile can serve as a template for ideal customer characteristics.
+
+
+================================================================================
+COMPARATIVE ANALYSIS
+--------------------------------------------------------------------------------
+The stark contrast between these two profiles highlights the importance of:
+• Early identification of at-risk customers using predictive scoring
+• Personalized retention strategies based on individual feature contributions
+• Understanding that different customers churn for different reasons
+• Using SHAP explanations to guide targeted interventions

@@ -1,0 +1,53 @@
+================================================================================
+SHAP INTERPRETATION REPORT
+Customer Churn Prediction - Telco Dataset
+================================================================================
+
+EXECUTIVE SUMMARY
+--------------------------------------------------------------------------------
+This analysis identifies the key drivers of customer churn using the LightGBM model with an AUC score of 0.8395. SHAP (SHapley Additive exPlanations) values provide transparent, interpretable insights into how each feature contributes to churn predictions.
+
+TOP 5 CHURN DRIVERS
+--------------------------------------------------------------------------------
+6. PaymentRiskScore: Impact Score = 0.6454
+10. Contract: Impact Score = 0.4222
+11. OnlineSecurity: Impact Score = 0.3112
+7. ContractTenureScore: Impact Score = 0.2656
+2. ChargesRatio: Impact Score = 0.2647
+
+
+TOP 5 RETENTION DRIVERS
+--------------------------------------------------------------------------------
+1. TotalCharges: Mean SHAP = -0.0434
+2. MonthlyCharges: Mean SHAP = -0.0433
+3. SpendingVolatility: Mean SHAP = -0.0348
+4. AvgMonthlySpending: Mean SHAP = -0.0244
+5. ChargesRatio: Mean SHAP = -0.0163
+
+
+SIGNIFICANT FEATURE INTERACTION
+--------------------------------------------------------------------------------
+Feature 1: Contract
+Feature 2: PaymentRiskScore
+Interaction Strength: 33.2460
+
+This interaction suggests that the combined effect of these features is more significant than their individual contributions. Business strategies should address both features simultaneously for optimal results.
+
+
+KEY INSIGHTS
+--------------------------------------------------------------------------------
+1. Early Tenure Risk: Customers in their first year show significantly higher churn risk.
+   The model identifies tenure-related features as critical predictors.
+
+2. Service Engagement: Customers with fewer services are more likely to churn.
+   Service diversity and total service count are strong retention indicators.
+
+3. Contract Type Impact: Month-to-month contracts show substantially higher churn rates
+   compared to yearly contracts, suggesting commitment reduces churn propensity.
+
+4. Pricing Sensitivity: Spending patterns and charge volatility indicate price-sensitive
+   customer segments that require careful pricing strategy management.
+
+5. Payment Method Correlation: Electronic check users demonstrate higher churn likelihood,
+   suggesting payment friction may contribute to customer dissatisfaction.
+

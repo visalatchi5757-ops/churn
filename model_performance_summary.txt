@@ -1,0 +1,14 @@
+================================================================================
+MODEL PERFORMANCE SUMMARY
+================================================================================
+
+Best Model: LightGBM
+AUC Score: 0.8395
+Precision: 0.5362
+Recall: 0.7326
+F1 Score: 0.6192
+
+Target AUC (0.85): NOT MET ✗
+
+Final Feature Set (20 features):
+SpendingVolatility, ChargesRatio, MonthlyCharges, AvgMonthlySpending, TotalCharges, PaymentRiskScore, ContractTenureScore, EngagementScore, tenure, Contract, OnlineSecurity, PaymentMethod, TechSupport, gender, InternetService, TotalServices, ServiceDiversity, OnlineBackup, MultipleLines, SeniorCitizen
