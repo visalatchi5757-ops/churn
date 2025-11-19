@@ -412,15 +412,4 @@ Created with: Python, XGBoost, LightGBM, SHAP
 ✅ **Reproducible Results** - Fixed random seeds  
 
 ---
-
-## 📞 Support
-
-For questions or issues:
-1. Check the Troubleshooting section above
-2. Review SHAP documentation: https://shap.readthedocs.io/
-3. Check model documentation (XGBoost/LightGBM)
-
----
-
-**Last Updated**: November 2024  
 **Version**: 2.0 (Corrected for AUC > 0.85)
